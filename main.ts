@@ -10,7 +10,7 @@ input.onButtonPressed(Button.A, function () {
 })
 input.onButtonPressed(Button.AB, function () {
     radio.sendString("" + control.deviceSerialNumber() + " : " + Binary)
-    serial.writeString("" + control.deviceSerialNumber() + " : " + Binary)
+    serial.writeLine("" + control.deviceSerialNumber() + " : " + Binary)
 })
 input.onButtonPressed(Button.B, function () {
     Binary = 1
